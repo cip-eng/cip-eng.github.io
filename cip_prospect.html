@@ -165,8 +165,8 @@
                                     <canvas id="geo_dist" style="padding:40px"></canvas>
                                 </div>
                                 <div class="col-md-12 faq-content" style="padding:20px;background-color: #ffffff">
-                                    <h4>Currecy Exposure and Hedging (in £B)</h4>
-                                    <canvas id="fx_exposure" style="padding:40px"></canvas>
+                                    <h4>Asset Under Management (in £B)</h4>
+                                    <canvas id="aum_history" style="padding:40px"></canvas>
                                 </div>
                                 <div class="col-md-12 faq-content" style="padding:20px;background-color: #ffffff">
                                     <h4>Fund Breakdown</h4>
@@ -283,12 +283,16 @@
                                     <p>Target: < 0.10%</p>
                                 </div>
                                 <div class="col-md-12 faq-content" style="padding:20px;background-color: #ffffff">
-                                    <h4>Currency Exposure & Hedge Ratios</h4>
-                                    <canvas id="hedge_ratio" style="padding:40px"></canvas>
+                                    <h4>Currecy Exposure and Hedging (in £B)</h4>
+                                    <canvas id="fx_exposure" style="padding:40px"></canvas>
                                 </div>
-                                <div class="col-md-12 faq-content" style="padding:20px;background-color: #ffffff">
+                                <div class="col-md-6 faq-content" style="padding:20px;background-color: #ffffff">
+                                    <h4>Currency Exposure & Hedge Ratios</h4>
+                                    <canvas id="hedge_ratio"></canvas>
+                                </div>
+                                <div class="col-md-6 faq-content" style="padding:20px;background-color: #ffffff">
                                     <h4>Stated Hedge Policy vs Current</h4>
-                                    <canvas id="hedge_policy" style="padding:40px"></canvas>
+                                    <canvas id="hedge_policy"></canvas>
                                 </div>
                                 <div class="col-md-12 faq-content" style="padding:20px;background-color: #ffffff">
                                     <h4>Current Hedging Instruments</h4>
@@ -598,6 +602,7 @@
                     topOffset: -63
                 });
                 
+                showAumHistory();
                 showAssetAlloc();
                 showGeoDist();
                 showFxExposure();

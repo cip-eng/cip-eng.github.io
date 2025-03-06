@@ -6,6 +6,101 @@ function login() {
     alert(document.forms['login_form'].email.value);
     alert(document.forms['login_form'].password.value);
 }
+function showAumHistory() {
+    const ctx = document.getElementById('aum_history');
+    new Chart(ctx, {
+        // type: 'line',
+        data: {
+            labels: ['31-03-2017', '30-06-2017', '30-09-2017', '31-12-2017'
+                , '31-03-2018', '30-06-2018', '30-09-2018', '31-12-2018'
+                , '31-03-2019', '30-06-2019', '30-09-2019', '31-12-2019'
+                , '31-03-2020', '30-06-2020', '30-09-2020', '31-12-2020'
+                , '31-03-2021', '30-06-2021', '30-09-2021', '31-12-2021'
+                , '31-03-2022', '30-06-2022', '30-09-2022', '31-12-2022'
+                , '31-03-2023', '30-06-2023', '30-09-2023', '31-12-2023'
+                , '31-03-2024', '30-06-2024', '30-09-2024', '31-12-2024'],
+            datasets: [{
+                    type: 'bar',
+                    // label: 'AUM Distribution',
+                    data: [1.5, 1.8, 1.9, 2.1
+                        , 2.5, 3.5, 4.1, 4.8
+                        , 4.9, 5.25, 6.4, 7.1
+                        , 8.2, 9.0, 9.75, 10.9
+                        , 12.0, 13.6, 14.9, 15.7
+                        , 18.0, 16.8, 17, 19
+                        , 20.2, 21.7, 21.9, 25.0
+                        , 26.7, 27.9, 28.3, 28.5],
+                    borderWidth: 1
+                }, {
+                    type: 'line',
+                    // label: 'AUM Distribution',
+                    data: [1.5, 1.8, 1.9, 2.1
+                        , 2.5, 3.5, 4.1, 4.8
+                        , 4.9, 5.25, 6.4, 7.1
+                        , 8.2, 9.0, 9.75, 10.9
+                        , 12.0, 13.6, 14.9, 15.7
+                        , 18.0, 16.8, 17, 19
+                        , 20.2, 21.7, 21.9, 25.0
+                        , 26.7, 27.9, 28.3, 28.5],
+                    borderWidth: 3
+                }]
+        },
+        options: {
+            // maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                // title: {
+                //     display: true,
+                //     text: 'Custom Chart Title'
+                // },
+                // subtitle: {
+                //     display: true,
+                //     text: 'Custom Chart Subtitle'
+                // },
+                // tooltip: {
+                //     callbacks: {
+                //         label: function(tooltipItem) { 
+                //             return tooltipItem.label + ' - ' + tooltipItem.formattedValue;
+                //         }
+                //     }
+                // },
+                legend: {
+                    display: false,
+                    position: 'bottom',
+                    title: {
+                        display: false,
+                        padding: 20,
+                        text: 'AUM History'
+                    },
+                    labels: {
+                        display: false,
+                        padding: 10,
+                        font: {
+                            size: 16
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    // beginAtZero: true
+                    display: true,
+                    title: {
+                        display: true, // Ensure the title is displayed
+                        text: "AUM (£B)", // Set the y-axis label text
+                        font: {
+                            size: 16
+                        }
+                    }
+                },
+                x: {
+                    // beginAtZero: true
+                    display: true
+                }
+            }
+        }
+    });
+}
 
 function showAssetAlloc() {
     const ctx = document.getElementById('asset_alloc');
