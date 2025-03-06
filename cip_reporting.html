@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Client Intelligence Platform</title>
+        <link rel="stylesheet" type="text/css" href="css/ext/jquery.bxslider.css"/>
+        <link rel="stylesheet" type="text/css" href="css/intro.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ext/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ext/all.css">
+
+        <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container"> <a class="navbar-brand navbar-logo" href="index.html"> <img src="images/logo.png" alt="logo" class="logo-1"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Prospects</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Market News</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">What's New</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Welcome Guest</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar --> 
+        <!-------Banner Start------->
+        <section class="banner" data-scroll-index='0'>
+            <div class="banner-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12">
+                        </div>
+                        <div class="col-md-5 col-sm-12"> 
+                            <div class="white">
+                                <h3>Prospect Home</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span>
+        </section>
+
+        <!-------Banner End-------> 
+
+        <!-------About End------->
+
+        <section class="about section-padding prelative" data-scroll-index='1'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Prospect Details</h3>
+                            <span class="line"></span>
+                            <p>Short description ...</p>
+                        </div>
+                        <div class="section-content text-center">
+                            <div class="row" style="overflow-x:auto;">
+                                <table class="table table-bordered table-striped">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Prospect</th>
+                                            <th>Category</th>
+                                            <th>Location</th>
+                                            <th>AUM</th>
+                                            <th>FX Exposure</th>
+                                            <th>Ranking</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="cip_prospect.html">People's Pension Fund</a></td>
+                                            <td>Government</td>
+                                            <td>London, UK</td>
+                                            <td>26.70B</td>
+                                            <td>11.34B</td>
+                                            <td>92%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cip_prospect.html">West Yorkshire Pension Fund</a></td>
+                                            <td>Government</td>
+                                            <td>Bradford, UK</td>
+                                            <td>34.70B</td>
+                                            <td>22.58B</td>
+                                            <td>87%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cip_prospect.html">Legal & General Resources Ltd.</a></td>
+                                            <td>Corporation</td>
+                                            <td>London, UK</td>
+                                            <td>16.70B</td>
+                                            <td>7.34B</td>
+                                            <td>86%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cip_prospect.html">Children's Investment Fund Foundation</a></td>
+                                            <td>Non-Profit</td>
+                                            <td>London, UK</td>
+                                            <td>6.70B</td>
+                                            <td>0.00B</td>
+                                            <td>71%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cip_prospect.html">Merchant Navy Ratings Pension Fund</a></td>
+                                            <td>Union</td>
+                                            <td>London, UK</td>
+                                            <td>5.70B</td>
+                                            <td>2.60B</td>
+                                            <td>69%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="about-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------About End-------> 
+
+        <!-------Video Start------->
+        <section class="video-section prelative text-center white">
+            <div class="section-padding video-overlay">
+                <div class="container">
+                    <h3>Watch Now</h3>
+                    <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+                    <div class="video-popup">
+                        <div class="video-src">
+                            <div class="iframe-src">
+                                <iframe src="https://www.youtube.com/embed/MlX6lZ1WPPE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------Video End-------> 
+
+        <!-------Market News Start------->
+        <section class="feature section-padding" data-scroll-index='2'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Market News</h3>
+                            <span class="line"></span>
+                            <p>Latest and Breaking News on Pension Fund</p>
+                        </div>
+                        <div class="section-content text-center">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="media-body text-right media-right-margin">
+                                            <h5>Geopolitical Risks</h5>
+                                            <p>Amist geopolitical risk, Pension funds increasing investments in private assets</p>
+                                        </div>
+                                        <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-body text-right media-right-margin">
+                                            <h5>Regulatory Alerts</h5>
+                                            <p>Upcoming regulatory funding regime. PRA has proposed enhanced liquidity reporting requirements</p>
+                                        </div>
+                                        <div class="media-right icon-border"> <span class="fa fa-battery-full" aria-hidden="true"></span> </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                                        <div class="media-body text-right media-right-margin">
+                                            <h5>Competitor Positioning</h5>
+                                            <p>Universal FX, a new BNY Mellon Foreign Exchange product provides custody-agnostic solutions to institutional clients</p>
+                                        </div>
+                                        <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-md-block d-lg-block">
+                                    <div class="feature-mobile"> <img src="images/news.png" class="img-fluid wow fadeInUp"/> </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
+                                        <div class="media-body text-left">
+                                            <h5>Pension Transfer Time</h5>
+                                            <p>Simpler pension transfer times fell in 2024, taking an average of 10.5 ...</p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
+                                        <div class="media-body text-left">
+                                            <h5>Tax Exemption on Sovereign Fund</h5>
+                                            <p>Clarity is required for tax exemption claims by sovereign wealth funds and pension funds</p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                                        <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
+                                        <div class="media-body text-left">
+                                            <h5>Wealth fund Preference</h5>
+                                            <p>Global pension and sovereign wealth managers are flocking to India while growing hesitant on China</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------Market News End-------> 
+
+        <!-------What's New Start------->
+        <section class="testimonial section-padding" data-scroll-index='3'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center white">
+                            <h3>What's New !!</h3>
+                            <span class="line"></span>
+                            <p class="white">Watch out this space for recent updates, content, blog posts and more ...</p>
+                        </div>
+
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="offset-md-2 col-md-8 col-sm-12">
+                                    <div class="slider">
+                                        <div class="slider-item">
+                                            <div class="test-img"><img src="images/rag.png" alt="Placeholder" width="157" height="157"></div>
+                                            <div class="test-text"><span class="title"><span>RAG Based Search</span></span>Using RAG to create more accurate and relevant responses by using external data sources to supplement a large language model's (LLM) training data.</div>
+                                        </div>
+                                        <div class="slider-item">
+                                            <div class="test-img"><img src="images/vector.png" alt="Placeholder" width="157" height="157"></div>
+                                            <div class="test-text"><span class="title"><span>Vector DB</span></span>Vector DB to perform fast, efficient similarity searches on large datasets by representing data as vectors, making it ideal for applications like semantic search.</div>
+                                        </div>
+                                        <div class="slider-item">
+                                            <div class="test-img"><img src="images/llm.png" alt="Placeholder" width="157" height="157"></div>
+                                            <div class="test-text"><span class="title"><span>Large Language Model</span></span>Advanced LLM models to aid in various areas, such as risk evaluation, fraud detection, customer support, compliance, and investment strategies</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------What's New End-------> 
+        
+        <!-------Contact Start------->
+        <section class="contact section-padding" data-scroll-index='4'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Contact us</h3>
+                            <span class="line"></span>
+                            <p>"Have a question? Get in touch with us!" or "Reach out to our team for any inquiries."</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-8">
+                                    <form id="contact_form" action="">
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
+                                            </div>
+                                            <div class="col">
+                                                <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
+                                        <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                                        <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
+                                    </form>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-4">
+                                    <div class="contact-info white">
+                                        <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Address</p>
+                                                <p class="text-uppercase">Bangalore, India</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Phone</p>
+                                                <p class="text-uppercase"><a class="text-white" href="tel:+91 0000000000">+91 0000000000</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">E-mail</p>
+                                                <p class="text-uppercase"><a class="text-white" href="mailto:sudiptasish@gmail.com">sudiptasish@gmail.com</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Working Hours</p>
+                                                <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------Contact End-------> 
+
+        <footer class="footer-copy">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy; Copyright 2025 iExchAnge. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+        <!-- scrollIt js --> 
+        <script src="js/scrollIt.min.js"></script> 
+        <script src="js/wow.min.js"></script> 
+        <script>
+            wow = new WOW();
+            wow.init();
+            $(document).ready(function (e) {
+
+                $('#video-icon').on('click', function (e) {
+                    e.preventDefault();
+                    $('.video-popup').css('display', 'flex');
+                    $('.iframe-src').slideDown();
+                });
+                $('.video-popup').on('click', function (e) {
+                    var $target = e.target.nodeName;
+                    var video_src = $(this).find('iframe').attr('src');
+                    if ($target != 'IFRAME') {
+                        $('.video-popup').fadeOut();
+                        $('.iframe-src').slideUp();
+                        $('.video-popup iframe').attr('src', " ");
+                        $('.video-popup iframe').attr('src', video_src);
+                    }
+                });
+
+                $('.slider').bxSlider({
+                    pager: false
+                });
+            });
+
+            $(window).on("scroll", function () {
+
+                var bodyScroll = $(window).scrollTop(),
+                        navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $('.navbar-logo img').attr('src', 'images/logo-dark.png');
+                    navbar.addClass("nav-scroll");
+
+                } else {
+                    $('.navbar-logo img').attr('src', 'images/logo.png');
+                    navbar.removeClass("nav-scroll");
+                }
+
+            });
+            $(window).on("load", function () {
+                var bodyScroll = $(window).scrollTop(),
+                        navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $('.navbar-logo img').attr('src', 'images/logo-dark.png');
+                    navbar.addClass("nav-scroll");
+                } else {
+                    $('.navbar-logo img').attr('src', 'images/logo.png');
+                    navbar.removeClass("nav-scroll");
+                }
+
+                $.scrollIt({
+
+                    easing: 'swing', // the easing function for animation
+                    scrollTime: 900, // how long (in ms) the animation takes
+                    activeClass: 'active', // class given to the active nav element
+                    onPageChange: null, // function(pageIndex) that is called when page is changed
+                    topOffset: -63
+                });
+            });
+
+        </script>
+    </body>
+</html>

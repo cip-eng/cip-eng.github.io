@@ -1,0 +1,100 @@
+.intro {
+    padding-right:80px;
+    margin:20px 0px 0px;
+}
+
+/* Style for the container div to hold the individual introductory text */
+.txt_container {
+    transform: scale(0.74);
+    animation: scale_anim 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale_anim {
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Style for individual introductory text */
+.txt_container div {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.txt_container div:nth-child(1) {
+    animation: txt_fade 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.txt_container div:nth-child(2) {
+    animation: txt_fade 1s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.txt_container div:nth-child(3) {
+    animation: txt_fade 1s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes txt_fade {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Style for the description */
+.desc {
+    padding-top: 50px;
+}
+
+.desc p {
+    color: #ffffff;
+    opacity: 0;
+    animation: desc_move 1s ease-out;
+    animation-delay: 3s;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes desc_move {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Style for demo button */
+.demo {
+    opacity: 0;
+    animation: demo_move 1s ease-out;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes demo_move {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Style for the tiny arrow character */
+.arrow {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 6px;
+    float: left;
+    transition: all .2s ease-in-out;
+}
+
+.arrow:hover {
+    transform: scale(1.4);
+}
